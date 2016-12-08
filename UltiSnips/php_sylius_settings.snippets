@@ -11,9 +11,9 @@ use Symfony\Component\Form\FormBuilderInterface;
 
 class `!v sniphpets#basename()` implements SchemaInterface
 {
-	public function buildSettings(SettingsBuilderInterface $builder)
+	public function buildSettings(SettingsBuilderInterface \$builder)
 	{
-		$builder
+		\$builder
 			->setDefaults([
 				'$1' => '$1',
 			])
@@ -23,9 +23,9 @@ class `!v sniphpets#basename()` implements SchemaInterface
 		;
 	}
 
-	public function buildForm(FormBuilderInterface $builder)
+	public function buildForm(FormBuilderInterface \$builder)
 	{
-		$builder
+		\$builder
 			->add('${1}')${0}
 		;
 	}

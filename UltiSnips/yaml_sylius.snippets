@@ -1,0 +1,12 @@
+priority -40
+
+global !p
+import sniphpets
+endglobal
+
+snippet sysettingsschema "Sylius / Settings schema" b
+`!p snip.rv = sniphpets.camel_to_snake(t[2], '_')`.settings_schema.`!p snip.rv = sniphpets.camel_to_snake(t[1], '_')`:
+	class: ${2:App}Bundle\Settings\\${1}SettingsSchema
+	tags:
+		- { name: sylius.settings_schema, namespace: `!p snip.rv = sniphpets.camel_to_snake(t[1], '_')` }
+endsnippet
